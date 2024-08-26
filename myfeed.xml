@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
+
+  <title>Chalkface feed</title>
+  <link rel="self" href="http://www.chalkface.com" />
+  <updated>2009-11-23T18:30:02Z</updated>
+  <author>
+    <name>Chalkface</name>
+  </author>
+  <id>234db</id>
+
+
+<entry>
+<title>Zero Tolerance to Bullying</title>
+<g:brand>Zero Tolerance</g:brand>
+<g:condition>new</g:condition>
+<description>In response to changes in the way schools view bullying, this resource focuses on peer support and the fact that students are now more willing to report occurrences. This whole-school approach helps to address the problem and develop policies on issues related to bullying.
+Topics include: Befriending an unpopular person; Intervening in a bullying situation; Bullying and peer pressure; Threats of violence; Sexual harassment; Bullying policies; Legislation and guidelines; Behaviour contracts.
+</description>
+<g:id>1-zero-tol-b</g:id>
+<link href="http://www.chalkface.com/products/Assemblies/ZTTB/" />
+<g:price>45.00</g:price>
+</entry>
+
+<entry>
+<title>Overcoming Bullying</title>
+<g:brand>Overcoming Bullying</g:brand>
+<g:condition>new</g:condition>
+<description>Designed to help students, teachers and parents address the problem of bullying within school. The pack encourages an awareness of why people bully and are bullied, and helps to develop positive strategies for change.
+
+Topics include: What is bullying?; When adults dont understand; Getting class support; Ignoring abuse.
+</description>
+<g:id>2-over-bull</g:id>
+<link href="http://www.chalkface.com/products/Assemblies/OVBU/" />
+<g:price>25.00</g:price>
+</entry>
+
+ 
+</feed>

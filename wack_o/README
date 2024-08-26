@@ -1,0 +1,28 @@
+WackoWiki
+
+Small, lightweight, handy, expandable Wiki-clone written in PHP4.
+
+This code was forked from WakkaWiki 0.1.2, with some patches from ChS,
+wikini.net, some new actions from WakkaWiki.com
+and essential amount of our own sourcecode.
+
+Please, subscribe to http://wackowiki.com/wackowiki/updates/revisions.xml feed
+in order to receive notices when WackoWiki will be updated.
+
+See readme.rus for russian readme.
+
+- RomanIvanov <thingol@mail.ru>, 2003-03-18
+
+----
+Wakka
+
+A Wiki-esque website toolkit by Hendrik Mans.
+
+Not much to read here. For some quick installation instructions, please
+check out INSTALL.
+
+Most of the Wakka documentation is available online only. Please visit
+the official Wakka homepage at <http://www.wakkawiki.com>. You'll
+find everything else there. (Eventually. :b)
+
+- Hendrik Mans <hendrik@mans.de>, 2002-09-04

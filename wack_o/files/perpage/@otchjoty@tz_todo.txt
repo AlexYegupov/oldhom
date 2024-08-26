@@ -1,0 +1,48 @@
+4 обработчика класса TAbsField:
+----- [1 проектный час]
+Нужно сделать 4 обработчика TAbsField:
+OnChange, OnValidate, OnGetText, OnSetText. По функциональности - как стандартные, в виде обёрток над реальными обработчиками - всё, вероятно нужно.
+
+
+
+
+Посмотри на обработчик TDatasetProvider.BeforeUpdateRecord (в примере AbsDatasetExample16 это AbsDataSetProvider.OnBeforeUpdateRecord3). В качестве параметра ему передаётся DeltaDS, текущая строка которого представляет собой изменённую строку в Clientdataset. При этом если юзер менял поле SomeField, то:
+
+DeltaDS.FieldByName('SomeField').Value = новое значение
+DeltaDS.FieldByName('SomeField').OldValue = старое значение
+
+А если юзер НЕ менял поле SomeField, то:
+
+DeltaDS.FieldByName('SomeField').Value = NULL!!!
+DeltaDS.FieldByName('SomeField').OldValue = старое значение
+
+
+
+
+
+Хотелось бы сделать обработчик аналогичный BeforeUpdateRecord в AbsgbDataset.
+
+procedure AbsgbDatasetBeforeUpdateRecord(
+  Sender: TObject;                                              - вызвавший объект
+  DeltaDS: TCustomClientDataSet;                                - AbsDataset 
+  UpdateKind: TUpdateKind; 
+  var Applied: Boolean                                          - если Applied, то 
+  );
+
+
+
+
+
+
+
+
+
+
+Написать обработчик события
+
+procedure TDataModule5.AbsDataSetProvider1BeforeUpdateRecord3(
+  Sender: TObject; SourceDS: TDataSet; DeltaDS: TCustomClientDataSet;
+  UpdateKind: TUpdateKind; var Applied: Boolean);
+begin
+
+end;

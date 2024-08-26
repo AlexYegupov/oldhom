@@ -1,0 +1,1334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/il/">
+<link rel="shortcut icon" href="http://aci.selfip.org/IMG/favicon.ico">
+<link href="ruaqtest_files/aci.css" rel="stylesheet" type="text/css">
+<title>Тест AQ</title>
+<style type="text/css">
+body
+{
+	font-size:14px;
+	line-height:1.5em;
+}
+
+#maindiv
+{
+	margin-left:20px;
+	margin-right:20px;
+	text-align:left;
+}
+
+#aqtest tr
+{
+	height:3em;
+}
+
+#aqtest td, th
+{
+	text-align:left;
+	vertical-align:middle;
+}
+
+#article
+{
+	position:relative;
+	z-index:1;
+	margin-right:20px;
+	margin-top:35px;
+	text-align:justify;
+}
+
+#title
+{
+	padding-top:90px;
+	width:87%;
+	text-align:center;
+	font-size:42px;
+	font-weight:bold;
+	line-height:2em;
+}
+
+#remark
+{
+	position:static;
+	z-index:2;
+	font-size:12px;
+	direction:rtl;
+	text-align:right;
+	margin-top:5px;
+}
+
+.qnum
+{
+	vertical-align:top;
+	padding-top:7px;
+	padding-right:0px;
+}
+
+.question
+{
+	width:35%;
+	vertical-align:top;
+	padding-top:7px;
+	padding-bottom:7px;
+	padding-right:0px;
+	padding-left:0px;
+}
+
+.answer
+{
+	text-align:center;
+	vertical-align:top;
+	padding-top:7px;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+#howtotitle
+{
+	margin-top:40px;
+	font-size:14px;
+	font-weight:bold;
+	text-align:left;
+}
+
+#howto
+{
+	font-size:12px;
+	text-align:left;
+}
+
+.numlist
+{
+	line-height:18px;
+	margin:0px;
+	text-indent:0px;
+	direction:ltr;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+#footnote
+{
+	font-size:14px;
+	margin-left:3px;
+	margin-top:80px;
+	direction:ltr;
+	padding-bottom:15px;
+}
+</style>
+<script type="text/javascript">
+<!--
+result = new Number(0);
+function DispRes ()
+{
+if (document.forms[0].A01[2].checked || document.forms[0].A01[3].checked) result++;
+if (document.forms[0].A02[0].checked || document.forms[0].A02[1].checked) result++;
+if (document.forms[0].A03[2].checked || document.forms[0].A03[3].checked) result++;
+if (document.forms[0].A04[0].checked || document.forms[0].A04[1].checked) result++;
+if (document.forms[0].A05[0].checked || document.forms[0].A05[1].checked) result++;
+if (document.forms[0].A06[0].checked || document.forms[0].A06[1].checked) result++;
+if (document.forms[0].A07[0].checked || document.forms[0].A07[1].checked) result++;
+if (document.forms[0].A08[2].checked || document.forms[0].A08[3].checked) result++;
+if (document.forms[0].A09[0].checked || document.forms[0].A09[1].checked) result++;
+if (document.forms[0].A10[2].checked || document.forms[0].A10[3].checked) result++;
+if (document.forms[0].A11[2].checked || document.forms[0].A11[3].checked) result++;
+if (document.forms[0].A12[0].checked || document.forms[0].A12[1].checked) result++;
+if (document.forms[0].A13[0].checked || document.forms[0].A13[1].checked) result++;
+if (document.forms[0].A14[2].checked || document.forms[0].A14[3].checked) result++;
+if (document.forms[0].A15[2].checked || document.forms[0].A15[3].checked) result++;
+if (document.forms[0].A16[0].checked || document.forms[0].A16[1].checked) result++;
+if (document.forms[0].A17[2].checked || document.forms[0].A17[3].checked) result++;
+if (document.forms[0].A18[0].checked || document.forms[0].A18[1].checked) result++;
+if (document.forms[0].A19[0].checked || document.forms[0].A19[1].checked) result++;
+if (document.forms[0].A20[0].checked || document.forms[0].A20[1].checked) result++;
+if (document.forms[0].A21[0].checked || document.forms[0].A21[1].checked) result++;
+if (document.forms[0].A22[0].checked || document.forms[0].A22[1].checked) result++;
+if (document.forms[0].A23[0].checked || document.forms[0].A23[1].checked) result++;
+if (document.forms[0].A24[2].checked || document.forms[0].A24[3].checked) result++;
+if (document.forms[0].A25[2].checked || document.forms[0].A25[3].checked) result++;
+if (document.forms[0].A26[0].checked || document.forms[0].A26[1].checked) result++;
+if (document.forms[0].A27[2].checked || document.forms[0].A27[3].checked) result++;
+if (document.forms[0].A28[2].checked || document.forms[0].A28[3].checked) result++;
+if (document.forms[0].A29[2].checked || document.forms[0].A29[3].checked) result++;
+if (document.forms[0].A30[2].checked || document.forms[0].A30[3].checked) result++;
+if (document.forms[0].A31[2].checked || document.forms[0].A31[3].checked) result++;
+if (document.forms[0].A32[2].checked || document.forms[0].A32[3].checked) result++;
+if (document.forms[0].A33[0].checked || document.forms[0].A33[1].checked) result++;
+if (document.forms[0].A34[2].checked || document.forms[0].A34[3].checked) result++;
+if (document.forms[0].A35[0].checked || document.forms[0].A35[1].checked) result++;
+if (document.forms[0].A36[2].checked || document.forms[0].A36[3].checked) result++;
+if (document.forms[0].A37[2].checked || document.forms[0].A37[3].checked) result++;
+if (document.forms[0].A38[2].checked || document.forms[0].A38[3].checked) result++;
+if (document.forms[0].A39[0].checked || document.forms[0].A39[1].checked) result++;
+if (document.forms[0].A40[2].checked || document.forms[0].A40[3].checked) result++;
+if (document.forms[0].A41[0].checked || document.forms[0].A41[1].checked) result++;
+if (document.forms[0].A42[0].checked || document.forms[0].A42[1].checked) result++;
+if (document.forms[0].A43[0].checked || document.forms[0].A43[1].checked) result++;
+if (document.forms[0].A44[2].checked || document.forms[0].A44[3].checked) result++;
+if (document.forms[0].A45[0].checked || document.forms[0].A45[1].checked) result++;
+if (document.forms[0].A46[0].checked || document.forms[0].A46[1].checked) result++;
+if (document.forms[0].A47[2].checked || document.forms[0].A47[3].checked) result++;
+if (document.forms[0].A48[2].checked || document.forms[0].A48[3].checked) result++;
+if (document.forms[0].A49[2].checked || document.forms[0].A49[3].checked) result++;
+if (document.forms[0].A50[2].checked || document.forms[0].A50[3].checked) result++;
+alert ("Результат теста: " + result);
+result = 0;
+}
+-->
+</script>
+<style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+
+#firebugBody {
+    position: fixed;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    width:1px;
+    height:1px;
+    overflow:visible;
+}
+
+.firebugCanvas {
+    position:fixed;
+    top: 0;
+    left: 0;
+    display:none;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.firebugHighlight {
+    z-index: 2147483647;
+    position: absolute;
+    background-color: #3875d7;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0 none;
+}
+
+.firebugLayoutBoxParent {
+    z-index: 2147483647;
+    position: absolute;
+    background-color: transparent;
+    border-top: 0 none;
+    border-right: 1px dashed #BBBBBB;
+    border-bottom: 1px dashed #BBBBBB;
+    border-left: 0 none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.firebugRuler {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0 none;
+}
+
+.firebugRulerH {
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    background: url(chrome://firebug/skin/rulerH.png) repeat-x;
+    border-top: 1px solid #BBBBBB;
+    border-right: 1px dashed #BBBBBB;
+    border-bottom: 1px solid #000000;
+}
+
+.firebugRulerV {
+    top: 0;
+    left: -15px;
+    width: 14px;
+    height: 100%;
+    background: url(chrome://firebug/skin/rulerV.png) repeat-y;
+    border-left: 1px solid #BBBBBB;
+    border-right: 1px solid #000000;
+    border-bottom: 1px dashed #BBBBBB;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.firebugLayoutBoxOffset {
+    z-index: 2147483647;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.firebugLayoutBoxMargin {
+    background-color: #EDFF64;
+}
+
+.firebugLayoutBoxBorder {
+    background-color: #666666;
+}
+
+.firebugLayoutBoxPadding {
+    background-color: SlateBlue;
+}
+
+.firebugLayoutBoxContent {
+    background-color: SkyBlue;
+}
+
+/*.firebugHighlightGroup .firebugLayoutBox {
+    background-color: transparent;
+}
+
+.firebugHighlightBox {
+    background-color: Blue !important;
+}*/
+
+.firebugLayoutLine {
+    z-index: 2147483647;
+    background-color: #000000;
+    opacity: 0.4;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0 none;
+}
+
+.firebugLayoutLineLeft,
+.firebugLayoutLineRight {
+    position: fixed;
+    width: 1px;
+    height: 100%;
+}
+
+.firebugLayoutLineTop,
+.firebugLayoutLineBottom {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px;
+    border-top: 1px solid #999999;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px;
+    border-left: 1px solid #999999;
+}
+</style></head><body>
+<script type="text/javascript">
+<!--
+if ((document.location.pathname.indexOf("menu.php")) != -1) document.location.replace("index.php"); // Don't open this file at the _top window.
+if (document.location.hostname.indexOf ("selfip.inf") != -1) document.location.hostname = 'aci.selfip.org';
+-->
+</script>
+<div id="menuupdiv" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='0';">
+</div>
+<div id="menudiv" style="z-index: 0;">
+<table id="menutab" cellpadding="0" cellspacing="0" border="0">
+	<tbody><tr>
+		<td style="background-color: rgb(255, 99, 71); color: rgb(255, 255, 255);" id="home" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='5';"><a href="http://aci.selfip.org/">עמוד הבית</a></td>
+		<td style="background-color: rgb(255, 128, 0); color: rgb(0, 0, 0);" id="about" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='visible';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='5';">אודות אס"י</td>
+		<td style="background-color: rgb(255, 204, 0); color: rgb(0, 0, 0);" id="contact" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='visible';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='5';">יצירת קשר<br>לא מחייב</td>
+		<td style="background-color: rgb(255, 255, 153); color: rgb(0, 0, 0);" id="links" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='visible';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='5';">קישורים חיצוניים בשפות זרות</td>
+		<td style="background-color: rgb(144, 238, 144); color: rgb(0, 0, 0);" id="heblinks" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='visible';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='5';">קישורים חיצוניים בעברית</td>
+		<td style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);" id="tools" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='visible';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='5';">כלים</td>
+		<td style="background-color: rgb(0, 0, 205); color: rgb(255, 255, 255);" id="trans" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='visible';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='5';">יצירות א"סים מתורגמות לעברית</td>
+		<td style="background-color: rgb(128, 0, 128); color: rgb(255, 255, 255);" id="other" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='visible';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='5';">יצירות מקוריות אחרות של א"סים ישראליים</td>
+		<td style="background-color: rgb(186, 85, 211); color: rgb(255, 255, 255);" id="works" class="topmenuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';">כתבים מקוריים של א"סים ישראליים</td>
+		<td id="emptycell" class="topmenuitem" style="width: 5px;" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='0';">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="underhome" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';
+						 document.getElementById('menudiv').style.zIndex='0';">&nbsp;</td>
+		<td style="visibility: hidden;" id="aboutmenu" class="menuitem" onmouseover="document.getElementById('aboutmenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';" onmouseout="document.getElementById('aboutmenu').style.visibility='hidden';
+						document.getElementById('menudiv').style.zIndex='0';">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="aboutmenuitem"><a href="http://aci.selfip.org/community.php">קהילה אוטיסטית:<br>מה, למה ואיך</a></td>
+				</tr>
+				<tr>
+					<td class="aboutmenuitem"><a href="http://aci.selfip.org/intro.php">אס"י - עקרונות, מטרות ופעולות</a></td>
+				</tr>
+				<tr>
+					<td class="aboutmenuitem"><a href="http://aci.selfip.org/sitemap.php">מפת אתר אס"י</a></td>
+				</tr>
+			</tbody></table>
+		</td>
+		<td style="visibility: hidden;" id="contamenu" class="menuitem" onmouseover="document.getElementById('contamenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';" onmouseout="document.getElementById('contamenu').style.visibility='hidden';
+						document.getElementById('menudiv').style.zIndex='0';">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="contamenuitem"><a href="http://aci.selfip.org/forums/">מערכת הפורומים של אס"י</a></td>
+				</tr>
+				<tr>
+					<td class="contamenuitem"><a href="mailto:autistics.il@gmail.com">שלח/י אלינו דוא"ל</a></td>
+				</tr>
+				<tr>
+					<td class="contamenuitem"><a href="http://aci.selfip.org/blogs/aci/">אסימן - הבלוג של אס"י</a></td>
+				</tr>
+				<tr>
+					<td class="contamenuitem"><a href="http://aci.selfip.org/newsletter/">חדשות אס"י - הניוזלטר האוטיסטי הראשון בעברית</a></td>
+				</tr>
+			</tbody></table>
+		</td>
+		<td style="visibility: hidden;" id="linksmenu" class="menuitem" onmouseover="document.getElementById('linksmenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';" onmouseout="document.getElementById('linksmenu').style.visibility='hidden';
+						document.getElementById('menudiv').style.zIndex='0';">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="linksmenuitem"><a href="http://www.ani.ac/">Autism Network International</a></td>
+				</tr>
+				<tr>
+					<td class="linksmenuitem"><a href="http://www.aspiesforfreedom.com/">Aspies for Freedom</a></td>
+				</tr>
+				<tr>
+					<td class="linksmenuitem"><a href="http://www.wrongplanet.net/">Wrong Planet</a></td>
+				</tr>
+				<tr>
+					<td class="linksmenuitem"><a href="http://www.aspiesforfreedom.com/auttv">AutTV</a></td>
+				</tr>
+				<tr>
+					<td class="linksmenuitem"><a href="http://aci.selfip.org/links.php">קישורים נוספים</a></td>
+				</tr>
+			</tbody></table>
+		</td>
+		<td style="visibility: hidden;" id="helnkmenu" class="menuitem" onmouseover="document.getElementById('helnkmenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';" onmouseout="document.getElementById('helnkmenu').style.visibility='hidden';
+						document.getElementById('menudiv').style.zIndex='0';">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="helnkmenuitem"><a href="http://www.members.lycos.co.uk/aspergia">תרבות אוטיסטית בישראל</a></td>
+				</tr>
+				<tr>
+					<td class="helnkmenuitem"><a href="http://he.wikipedia.org/wiki/%D7%A7%D7%98%D7%92%D7%95%D7%A8%D7%99%D7%94:%D7%94%D7%A7%D7%A9%D7%AA_%D7%94%D7%90%D7%95%D7%98%D7%99%D7%A1%D7%98%D7%99%D7%AA">הקשת האוטיסטית בויקיפדיה</a></td>
+				</tr>
+				<tr>
+					<td class="helnkmenuitem"><a href="http://www.solashelly.org/">האתר של סולה שלי</a></td>
+				</tr>
+				<tr>
+					<td class="helnkmenuitem"><a href="http://blog.tapuz.co.il/autisticcultureinisr">הבלוג של חן גרשוני</a></td>
+				</tr>
+				<tr>
+					<td class="helnkmenuitem"><a href="http://blog.tapuz.co.il/solashelly">הבלוג של סולה שלי</a></td>
+				</tr>
+				<tr>
+					<td class="helnkmenuitem"><a href="http://aci.selfip.org/blogs/ronen">הבלוג של רונן גיל</a></td>
+				</tr>
+			</tbody></table>
+		</td>
+		<td style="visibility: hidden;" id="toolsmenu" class="menuitem" onmouseover="document.getElementById('toolsmenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';" onmouseout="document.getElementById('toolsmenu').style.visibility='hidden';
+						document.getElementById('menudiv').style.zIndex='0';">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="toolsmenuitem"><a href="http://aci.selfip.org/aqtest.php">AQ מבחן</a></td>
+				</tr>
+			</tbody></table>
+		</td>
+		<td style="visibility: hidden;" id="transmenu" class="menuitem" onmouseover="document.getElementById('transmenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';" onmouseout="document.getElementById('transmenu').style.visibility='hidden';
+						document.getElementById('menudiv').style.zIndex='0';">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="transmenuitem"><a href="http://aci.selfip.org/js031193.php">אל תתאבלו עלינו</a></td>
+				</tr>
+				<tr>
+					<td class="transmenuitem"><a href="http://aci.selfip.org/jobacheb.php">תעסוקה שתתאים</a></td>
+				</tr>
+				<tr>
+					<td class="transmenuitem"><a href="http://aci.selfip.org/js199901.php">כינויי 'אדם עם'</a></td>
+				</tr>
+				<tr>
+					<td class="transmenuitem"><a href="http://aci.selfip.org/dean.php">קטע וידאו</a></td>
+				</tr>
+			</tbody></table>
+		</td>
+		<td style="visibility: hidden;" id="othermenu" class="menuitem" onmouseover="document.getElementById('othermenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';" onmouseout="document.getElementById('othermenu').style.visibility='hidden';
+						document.getElementById('menudiv').style.zIndex='0';">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/cposters.php">כרזות אוטיסטיות</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/pandd.php">דכאון וכאב</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/salvia.php">מרווה באדנית</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/rh2007.php">רמת הנדיב</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/dsview.php">מבט מדברי</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/ramon06.php">מכתש רמון 2006</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/sha1106s.php">חוף השרון</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/psyc.php">מסגרות פסיכדליות</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/ronen27112006.php">צבעי גועש דיגיטאלי</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/yonatan.php">ציורי תעשיה</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/09112007.php">אגמון החולה</a></td>
+				</tr>
+				<tr>
+					<td class="othermenuitem"><a href="http://aci.selfip.org/07032008.php">אירוס הארגמן</a></td>
+				</tr>
+			</tbody></table>
+		</td>
+		<td style="visibility: hidden;" id="worksmenu" class="menuitem" onmouseover="document.getElementById('worksmenu').style.visibility='visible';
+						 document.getElementById('menudiv').style.zIndex='5';" onmouseout="document.getElementById('worksmenu').style.visibility='hidden';
+						document.getElementById('menudiv').style.zIndex='0';">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="worksmenuitem"><a href="http://aci.selfip.org/drakonite0406.php">מסר להורים</a></td>
+				</tr>
+				<tr>
+					<td class="worksmenuitem"><a href="http://aci.selfip.org/shira01.php">קטע</a></td>
+				</tr>
+				<tr>
+					<td class="worksmenuitem"><a href="http://aci.selfip.org/ronen050906.php">מרק אספרגום ללא מתכון</a></td>
+				</tr>
+				<tr>
+					<td class="worksmenuitem"><a href="http://aci.selfip.org/yotam100606.php">הנאום האחרון של ישוע</a></td>
+				</tr>
+				<!--<tr>
+					<td class="worksmenuitem"
+						><a href="asnths-he.php">אלטרנטיבה לחלוקה אספרגר / נורמליות</a></td>
+				</tr>-->
+				<tr>
+					<td class="worksmenuitem"><a href="http://aci.selfip.org/tobeorno.php">להיות או לא להיות אספי/ת</a></td>
+				</tr>
+				<tr>
+					<td class="worksmenuitem"><a href="http://aci.selfip.org/commattr.pdf">חשיבותה של קבוצת עמיתים בהתבגרות</a></td>
+				</tr>
+				<tr>
+					<td class="worksmenuitem"><a href="http://aci.selfip.org/thinkdiff.pdf">לחשוב אחרת על אוטיזם</a></td>
+				</tr>
+				<tr>
+					<td class="worksmenuitem"><a href="http://aci.selfip.org/radio0709.php">תמלול תכנית רדיו</a></td>
+				</tr>
+			</tbody></table>
+		</td>
+		<td id="righttomenu" style="cursor: default;" onmouseover="document.getElementById('aboutmenu').style.visibility='hidden';
+						 document.getElementById('contamenu').style.visibility='hidden';
+						 document.getElementById('linksmenu').style.visibility='hidden';
+						 document.getElementById('helnkmenu').style.visibility='hidden';
+						 document.getElementById('toolsmenu').style.visibility='hidden';
+						 document.getElementById('transmenu').style.visibility='hidden';
+						 document.getElementById('othermenu').style.visibility='hidden';
+						 document.getElementById('worksmenu').style.visibility='hidden';">&nbsp;</td>
+	</tr>
+</tbody></table>
+</div>
+<script type="text/javascript">
+<!--
+document.getElementById("home").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("about").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("contact").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("links").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("heblinks").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("tools").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("trans").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("other").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("works").style.filter =
+  "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=20, StartY=0,  FinishX=11,  FinishY=0) " 
++ "Alpha(Opacity=100, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=80, Style=1, StartX=80, StartY=0,  FinishX=89,  FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=10, FinishX=0,   FinishY=0) "
++ "Alpha(Opacity=100, FinishOpacity=0,  Style=1, StartX=0,  StartY=90, FinishX=0,   FinishY=100)";
+document.getElementById("aboutmenu").style.filter =
+  "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) ";
+document.getElementById("contamenu").style.filter =
+  "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) ";
+document.getElementById("linksmenu").style.filter =
+  "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) ";
+document.getElementById("helnkmenu").style.filter =
+  "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) ";
+document.getElementById("toolsmenu").style.filter =
+  "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) ";
+document.getElementById("transmenu").style.filter =
+  "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) ";
+document.getElementById("othermenu").style.filter =
+  "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) ";
+document.getElementById("worksmenu").style.filter =
+  "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=10, StartY=0,  FinishX=0,   FinishY=0) " 
++ "Alpha(Opacity=95, FinishOpacity=60, Style=1, StartX=90, StartY=0,  FinishX=100, FinishY=0) ";
+document.getElementById("home").style.backgroundColor = "#FF6347";
+document.getElementById("home").style.color = "#FFFFFF";
+document.getElementById("about").style.backgroundColor = "#FF8000";
+document.getElementById("about").style.color = "#000000";
+document.getElementById("contact").style.backgroundColor = "#FFCC00";
+document.getElementById("contact").style.color = "#000000";
+document.getElementById("links").style.backgroundColor = "#FFFF99";
+document.getElementById("links").style.color = "#000000";
+document.getElementById("heblinks").style.backgroundColor = "#90EE90";
+document.getElementById("heblinks").style.color = "#000000";
+document.getElementById("tools").style.backgroundColor = "#008080";
+document.getElementById("tools").style.color = "#FFFFFF";
+document.getElementById("trans").style.backgroundColor = "#0000CD";
+document.getElementById("trans").style.color = "#FFFFFF";
+document.getElementById("other").style.backgroundColor = "#800080";
+document.getElementById("other").style.color = "#FFFFFF";
+document.getElementById("works").style.backgroundColor = "#BA55D3";
+document.getElementById("works").style.color = "#FFFFFF";
+-->
+</script>
+<div id="logodiv">
+<a href="http://aci.selfip.org/"><img src="ruaqtest_files/Logo.gif" alt="ACI" style="border: medium none ;"></a>
+</div>
+<div id="maindiv">
+<div style="margin: 0px; text-align: right;">
+<div style="color: rgb(112, 112, 112);" id="title">
+Проверь себя с помощью теста AQ
+</div>
+</div>
+<script type="text/javascript">
+<!--
+document.getElementById("title").style.color = "#707070";
+document.getElementById("title").style.filter =
+"dropShadow(color=#111111, OffX=1, OffY=1, Positive=1)"
++ "dropShadow(color=#333333, OffX=1, OffY=1, Positive=1)"
++ "dropShadow(color=#555555, OffX=1, OffY=1, Positive=1)"
++ "dropShadow(color=#777777, OffX=1, OffY=1, Positive=1)"
++ "dropShadow(color=#999999, OffX=1, OffY=1, Positive=1)"
++ "dropShadow(color=#BBBBBB, OffX=1, OffY=1, Positive=1)"
++ "dropShadow(color=#DDDDDD, OffX=1, OffY=1, Positive=1)";
+-->
+</script>
+<div id="article">
+Психолог Саймон Барон-Коган и его коллеги из Кембриджского центра по
+изучению аутизма разработали шкалу для определения признаков аутизма у
+взрослых, или коэффициент аутизма AQ.
+В первом серьезном опыте использования теста средняя оценка контрольной
+группы была 16.4. Восемьдесят процентов тех, у кого диагностирован
+аутизм или связанные с ним синдромы, получили результат 32 балла и
+выше. Тест не является средством диагностики, и многие из тех, кто
+получает 32 балла и выше, т.е. результат, подходящий под критерии
+легкого аутизма или синдрома Аспергера, отмечают отсутствие трудностей
+в повседневной жизни. </div>
+<div id="remark">
+תרגום עמוד זה זמין גם בעברית בכתובת: <a style="color: rgb(0, 0, 153);" href="http://aci.selfip.org/aqtest.php">http://aci.selfip.org/aqtest.php</a>
+</div>
+<div style="font-size: 11px; text-align: left; direction: ltr; margin-top: 5px;">
+Эта страница является переводом статьи из журнала Wired с веб-страницы:
+<a style="color: rgb(0, 0, 153);" href="http://www.wired.com/wired/archive/9.12/aqtest.html">http://www.wired.com/wired/archive/9.12/aqtest.html</a>
+</div>
+<form id="AQtest" action="none">
+<table>
+<tbody><tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">01. </td><td class="question">Я предпочитаю совместные действия действиям в одиночку</td>
+<td class="answer"><input name="A01" type="radio"></td>
+<td class="answer"><input name="A01" type="radio"></td>
+<td class="answer"><input name="A01" type="radio"></td>
+<td class="answer"><input name="A01" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">02. </td><td class="question">Я предпочитаю выполнять те же действия снова и снова</td>
+<td class="answer"><input name="A02" type="radio"></td>
+<td class="answer"><input name="A02" type="radio"></td>
+<td class="answer"><input name="A02" type="radio"></td>
+<td class="answer"><input name="A02" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">03. </td><td class="question">Если я пытаюсь что-нибудь вообразить, мне легко мысленно создать образ</td>
+<td class="answer"><input name="A03" type="radio"></td>
+<td class="answer"><input name="A03" type="radio"></td>
+<td class="answer"><input name="A03" type="radio"></td>
+<td class="answer"><input name="A03" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">04. </td><td class="question">Часто я полностю погружаюсь в какое-нибудь дело настолько, что не вижу ничего вокруг</td>
+<td class="answer"><input name="A04" type="radio"></td>
+<td class="answer"><input name="A04" type="radio"></td>
+<td class="answer"><input name="A04" type="radio"></td>
+<td class="answer"><input name="A04" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">05. </td><td class="question">Часто я слышу настолько слабые звуки, что другие их не слышат</td>
+<td class="answer"><input name="A05" type="radio"></td>
+<td class="answer"><input name="A05" type="radio"></td>
+<td class="answer"><input name="A05" type="radio"></td>
+<td class="answer"><input name="A05" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">06. </td><td class="question">Обычно я обращаю внимание на номерные знаки автомобилей и подобную информацию</td>
+<td class="answer"><input name="A06" type="radio"></td>
+<td class="answer"><input name="A06" type="radio"></td>
+<td class="answer"><input name="A06" type="radio"></td>
+<td class="answer"><input name="A06" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">07. </td><td class="question">Зачастую люди говорят мне, что то, что я сказал, невежливо, хотя я думаю, что это вежливо</td>
+<td class="answer"><input name="A07" type="radio"></td>
+<td class="answer"><input name="A07" type="radio"></td>
+<td class="answer"><input name="A07" type="radio"></td>
+<td class="answer"><input name="A07" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">08. </td><td class="question">Когда я читаю книгу, я с легкостью представляю, как выглядят действующие лица</td>
+<td class="answer"><input name="A08" type="radio"></td>
+<td class="answer"><input name="A08" type="radio"></td>
+<td class="answer"><input name="A08" type="radio"></td>
+<td class="answer"><input name="A08" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">09. </td><td class="question">Меня завораживают даты</td>
+<td class="answer"><input name="A09" type="radio"></td>
+<td class="answer"><input name="A09" type="radio"></td>
+<td class="answer"><input name="A09" type="radio"></td>
+<td class="answer"><input name="A09" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">10. </td><td class="question">В компании я с легкостью могу следить за разговорами других людей</td>
+<td class="answer"><input name="A10" type="radio"></td>
+<td class="answer"><input name="A10" type="radio"></td>
+<td class="answer"><input name="A10" type="radio"></td>
+<td class="answer"><input name="A10" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">11. </td><td class="question">Я считаю легкими ситуации, связанные с общением между людьми</td>
+<td class="answer"><input name="A11" type="radio"></td>
+<td class="answer"><input name="A11" type="radio"></td>
+<td class="answer"><input name="A11" type="radio"></td>
+<td class="answer"><input name="A11" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">12. </td><td class="question">Я склонен замечать частности, которые другие люди не замечают</td>
+<td class="answer"><input name="A12" type="radio"></td>
+<td class="answer"><input name="A12" type="radio"></td>
+<td class="answer"><input name="A12" type="radio"></td>
+<td class="answer"><input name="A12" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">13. </td><td class="question">Я предпочитаю пойти в библиотеку, а не на вечеринку</td>
+<td class="answer"><input name="A13" type="radio"></td>
+<td class="answer"><input name="A13" type="radio"></td>
+<td class="answer"><input name="A13" type="radio"></td>
+<td class="answer"><input name="A13" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">14. </td><td class="question">Мне легко выдумывать истории</td>
+<td class="answer"><input name="A14" type="radio"></td>
+<td class="answer"><input name="A14" type="radio"></td>
+<td class="answer"><input name="A14" type="radio"></td>
+<td class="answer"><input name="A14" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">15. </td><td class="question">Меня привлекают люди больше, чем вещи</td>
+<td class="answer"><input name="A15" type="radio"></td>
+<td class="answer"><input name="A15" type="radio"></td>
+<td class="answer"><input name="A15" type="radio"></td>
+<td class="answer"><input name="A15" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">16. </td><td class="question">Я склонен глубоко вникать в то, что меня интересует, и мне тяжело, если я не могу этого делать</td>
+<td class="answer"><input name="A16" type="radio"></td>
+<td class="answer"><input name="A16" type="radio"></td>
+<td class="answer"><input name="A16" type="radio"></td>
+<td class="answer"><input name="A16" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">17. </td><td class="question">Я получаю удовольствие от разговора "ни о чем"</td>
+<td class="answer"><input name="A17" type="radio"></td>
+<td class="answer"><input name="A17" type="radio"></td>
+<td class="answer"><input name="A17" type="radio"></td>
+<td class="answer"><input name="A17" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">18. </td><td class="question">Когда я говорю, не всегда легко понять мое остроумие</td>
+<td class="answer"><input name="A18" type="radio"></td>
+<td class="answer"><input name="A18" type="radio"></td>
+<td class="answer"><input name="A18" type="radio"></td>
+<td class="answer"><input name="A18" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">19. </td><td class="question">Меня завораживают цифры</td>
+<td class="answer"><input name="A19" type="radio"></td>
+<td class="answer"><input name="A19" type="radio"></td>
+<td class="answer"><input name="A19" type="radio"></td>
+<td class="answer"><input name="A19" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">20. </td><td class="question">Когда я читаю рассказ, мне трудно разобраться в побуждениях действующих лиц</td>
+<td class="answer"><input name="A20" type="radio"></td>
+<td class="answer"><input name="A20" type="radio"></td>
+<td class="answer"><input name="A20" type="radio"></td>
+<td class="answer"><input name="A20" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">21. </td><td class="question">Я не очень люблю читать прозу</td>
+<td class="answer"><input name="A21" type="radio"></td>
+<td class="answer"><input name="A21" type="radio"></td>
+<td class="answer"><input name="A21" type="radio"></td>
+<td class="answer"><input name="A21" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">22. </td><td class="question">Мне трудно приобретать новых друзей</td>
+<td class="answer"><input name="A22" type="radio"></td>
+<td class="answer"><input name="A22" type="radio"></td>
+<td class="answer"><input name="A22" type="radio"></td>
+<td class="answer"><input name="A22" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">23. </td><td class="question">Я всё время замечаю узоры на вещах</td>
+<td class="answer"><input name="A23" type="radio"></td>
+<td class="answer"><input name="A23" type="radio"></td>
+<td class="answer"><input name="A23" type="radio"></td>
+<td class="answer"><input name="A23" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">24. </td><td class="question">Я предпочитаю пойти в театр, а не в музей</td>
+<td class="answer"><input name="A24" type="radio"></td>
+<td class="answer"><input name="A24" type="radio"></td>
+<td class="answer"><input name="A24" type="radio"></td>
+<td class="answer"><input name="A24" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">25. </td><td class="question">Мне не мешает, если распорядок дня нарушен</td>
+<td class="answer"><input name="A25" type="radio"></td>
+<td class="answer"><input name="A25" type="radio"></td>
+<td class="answer"><input name="A25" type="radio"></td>
+<td class="answer"><input name="A25" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">26. </td><td class="question">Часто бывает, что я не знаю, как продолжить беседу</td>
+<td class="answer"><input name="A26" type="radio"></td>
+<td class="answer"><input name="A26" type="radio"></td>
+<td class="answer"><input name="A26" type="radio"></td>
+<td class="answer"><input name="A26" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">27. </td><td class="question">Когда кто-нибудь разговаривает со мной, мне легко "читать между строк" </td>
+<td class="answer"><input name="A27" type="radio"></td>
+<td class="answer"><input name="A27" type="radio"></td>
+<td class="answer"><input name="A27" type="radio"></td>
+<td class="answer"><input name="A27" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">28. </td><td class="question">Обычно я сосредотачиваюсь на общей картине, а не на частностях</td>
+<td class="answer"><input name="A28" type="radio"></td>
+<td class="answer"><input name="A28" type="radio"></td>
+<td class="answer"><input name="A28" type="radio"></td>
+<td class="answer"><input name="A28" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">29. </td><td class="question">Я не очень хорошо запоминаю номера телефонов</td>
+<td class="answer"><input name="A29" type="radio"></td>
+<td class="answer"><input name="A29" type="radio"></td>
+<td class="answer"><input name="A29" type="radio"></td>
+<td class="answer"><input name="A29" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">30. </td><td class="question">Обычно я не замечаю небольших изменений во внешнем виде или состоянии людей</td>
+<td class="answer"><input name="A30" type="radio"></td>
+<td class="answer"><input name="A30" type="radio"></td>
+<td class="answer"><input name="A30" type="radio"></td>
+<td class="answer"><input name="A30" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">31. </td><td class="question">Я могу определить, что тому, кто меня слушает, скучно</td>
+<td class="answer"><input name="A31" type="radio"></td>
+<td class="answer"><input name="A31" type="radio"></td>
+<td class="answer"><input name="A31" type="radio"></td>
+<td class="answer"><input name="A31" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">32. </td><td class="question">Мне легко заниматься несколькими делами одновременно</td>
+<td class="answer"><input name="A32" type="radio"></td>
+<td class="answer"><input name="A32" type="radio"></td>
+<td class="answer"><input name="A32" type="radio"></td>
+<td class="answer"><input name="A32" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">33. </td><td class="question">Когда я разговариваю по телефону, я не всегда знаю, когда моя очередь говорить</td>
+<td class="answer"><input name="A33" type="radio"></td>
+<td class="answer"><input name="A33" type="radio"></td>
+<td class="answer"><input name="A33" type="radio"></td>
+<td class="answer"><input name="A33" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">34. </td><td class="question">Я получаю удовольствие, когда поступаю спонтанно</td>
+<td class="answer"><input name="A34" type="radio"></td>
+<td class="answer"><input name="A34" type="radio"></td>
+<td class="answer"><input name="A34" type="radio"></td>
+<td class="answer"><input name="A34" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">35. </td><td class="question">Часто я последним понимаю шутку</td>
+<td class="answer"><input name="A35" type="radio"></td>
+<td class="answer"><input name="A35" type="radio"></td>
+<td class="answer"><input name="A35" type="radio"></td>
+<td class="answer"><input name="A35" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">36. </td><td class="question">Когда я смотрю на лицо человека, мне легко понять, что он думает или чувствует</td>
+<td class="answer"><input name="A36" type="radio"></td>
+<td class="answer"><input name="A36" type="radio"></td>
+<td class="answer"><input name="A36" type="radio"></td>
+<td class="answer"><input name="A36" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">37. </td><td class="question">Если мне мешают, я с легкостью возвращаюсь к прерванному делу</td>
+<td class="answer"><input name="A37" type="radio"></td>
+<td class="answer"><input name="A37" type="radio"></td>
+<td class="answer"><input name="A37" type="radio"></td>
+<td class="answer"><input name="A37" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">38. </td><td class="question">Я умею вести разговор "ни о чем"</td>
+<td class="answer"><input name="A38" type="radio"></td>
+<td class="answer"><input name="A38" type="radio"></td>
+<td class="answer"><input name="A38" type="radio"></td>
+<td class="answer"><input name="A38" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">39. </td><td class="question">Люди говорят мне, что я застопорен на одной теме</td>
+<td class="answer"><input name="A39" type="radio"></td>
+<td class="answer"><input name="A39" type="radio"></td>
+<td class="answer"><input name="A39" type="radio"></td>
+<td class="answer"><input name="A39" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">40. </td><td class="question">В молодости я любил играть в игры с переодеванием, с другими детьми</td>
+<td class="answer"><input name="A40" type="radio"></td>
+<td class="answer"><input name="A40" type="radio"></td>
+<td class="answer"><input name="A40" type="radio"></td>
+<td class="answer"><input name="A40" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">41. </td><td class="question">Я люблю собирать информацию о категориях (например, модели машин, виды растений, птиц и пр.)</td>
+<td class="answer"><input name="A41" type="radio"></td>
+<td class="answer"><input name="A41" type="radio"></td>
+<td class="answer"><input name="A41" type="radio"></td>
+<td class="answer"><input name="A41" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">42. </td><td class="question">Мне трудно представить себя кем-то другим</td>
+<td class="answer"><input name="A42" type="radio"></td>
+<td class="answer"><input name="A42" type="radio"></td>
+<td class="answer"><input name="A42" type="radio"></td>
+<td class="answer"><input name="A42" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">43. </td><td class="question">Я люблю планировать мероприятия, в которых я участвую</td>
+<td class="answer"><input name="A43" type="radio"></td>
+<td class="answer"><input name="A43" type="radio"></td>
+<td class="answer"><input name="A43" type="radio"></td>
+<td class="answer"><input name="A43" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">44. </td><td class="question">Я получаю удовольствие от общественных мероприятий</td>
+<td class="answer"><input name="A44" type="radio"></td>
+<td class="answer"><input name="A44" type="radio"></td>
+<td class="answer"><input name="A44" type="radio"></td>
+<td class="answer"><input name="A44" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">45. </td><td class="question">Мне трудно разбираться в намерениях людей</td>
+<td class="answer"><input name="A45" type="radio"></td>
+<td class="answer"><input name="A45" type="radio"></td>
+<td class="answer"><input name="A45" type="radio"></td>
+<td class="answer"><input name="A45" type="radio"></td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th class="question">&nbsp;</th>
+<th class="answer">согласен<br>полностью</th>
+<th class="answer">согласен<br>частично</th>
+<th class="answer">не согласен<br>частично</th>
+<th class="answer">не согласен<br>полностью</th>
+</tr>
+<tr>
+<td class="qnum">46. </td><td class="question">Новые ситуации напрягают меня</td>
+<td class="answer"><input name="A46" type="radio"></td>
+<td class="answer"><input name="A46" type="radio"></td>
+<td class="answer"><input name="A46" type="radio"></td>
+<td class="answer"><input name="A46" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">47. </td><td class="question">Я с удовольствием встречаюсь с новыми людьми</td>
+<td class="answer"><input name="A47" type="radio"></td>
+<td class="answer"><input name="A47" type="radio"></td>
+<td class="answer"><input name="A47" type="radio"></td>
+<td class="answer"><input name="A47" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">48. </td><td class="question">Я хороший дипломат</td>
+<td class="answer"><input name="A48" type="radio"></td>
+<td class="answer"><input name="A48" type="radio"></td>
+<td class="answer"><input name="A48" type="radio"></td>
+<td class="answer"><input name="A48" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">49. </td><td class="question">Я плохо помню даты дней рождения людей</td>
+<td class="answer"><input name="A49" type="radio"></td>
+<td class="answer"><input name="A49" type="radio"></td>
+<td class="answer"><input name="A49" type="radio"></td>
+<td class="answer"><input name="A49" type="radio"></td>
+</tr>
+<tr>
+<td class="qnum">50. </td><td class="question">Мне легко играть с детьми в игры, когда нужно представить себя кем-то или чем-то</td>
+<td class="answer"><input name="A50" type="radio"></td>
+<td class="answer"><input name="A50" type="radio"></td>
+<td class="answer"><input name="A50" type="radio"></td>
+<td class="answer"><input name="A50" type="radio"></td>
+</tr>
+</tbody></table>
+<div>
+<input style="margin-top: 20px;" value="показать результат" onclick="javascript:DispRes();" type="button">
+</div>
+</form>
+<div id="howtotitle">
+Рассчет результатов:
+</div>
+<div id="howto">
+<ul style="margin-top: 3px; margin-right: 15px;">
+<li>
+для всех ответов "согласен полностью" или "согласен частично" на следующие вопросы:<br>
+<p class="numlist">02, 04, 05, 06, 07, 09, 12, 13, 16, 18, 19, 20, 21, 22, 23, 26, 33, 35, 39, 41, 42, 43, 45, 46</p>
+дается один балл.</li>
+<li>
+для всех ответов "не согласен полностью" или "не согласен частично" на следующие вопросы:<br>
+<p class="numlist">01, 03, 08, 10, 11, 14, 15, 17, 24, 25, 27, 28, 29, 30, 31, 32, 34, 36, 37, 38, 40, 44, 47, 48, 49, 50</p>
+дается один балл.</li>
+</ul>
+</div>
+<div id="footnote">
+&nbsp;
+</div>
+</div>
+<script type="text/javascript">
+<!--
+	if ((document.location.pathname.indexOf("bottlogo.php")) != -1) document.location.replace("index.php"); // Don't open this file at the _top window.
+-->
+</script>
+<div id="footer">
+<table style="border: medium inset rgb(0, 255, 204); padding: 0px; direction: ltr;" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+<table style="border: medium outset rgb(0, 255, 204); padding: 0px;" cellpadding="0" cellspacing="0">
+<tbody><tr>
+	<td colspan="1" style="background-color: rgb(0, 128, 128);">&nbsp;</td>
+	<td colspan="2" class="updateline" style="text-align: left;">
+		<a target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/2.5/il/deed.en"><img alt="Creative Commons license" style="border: medium none ;" src="ruaqtest_files/88x31.png"></a>
+	</td>
+	<td colspan="11" class="updateline" style="text-align: left;">
+		&nbsp;Данная страница <a href="http://aci.selfip.org/">сайта ACI</a>,  публикуется согласно<br>
+		<a target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/2.5/il/deed.en">
+		&nbsp;лицензии Упоминание - некоммерческое использование - запрещение обработки произведения, версия 2.5 Израиля</a>.</td>
+	<td colspan="1" class="updateline">&nbsp;</td>
+	<td colspan="5" class="updateline" style="text-align: center;">
+		Последнее обновление:<br>21.04.2008 12:55:04	</td>
+	<td colspan="1" style="background-color: rgb(0, 128, 128);">&nbsp;</td>
+</tr>
+<tr id="PowerLine">
+	<td colspan="3" style="text-align: left; padding-left: 3px;">
+		<a target="_blank" href="http://validator.w3.org/check?uri=referer&amp;ss">
+			<img style="border: medium none ; width: 88px; height: 31px;" src="ruaqtest_files/valid-xhtml10.png" alt="Valid XHTML 1.0">
+		</a>
+	</td>
+	<td colspan="3" style="text-align: center;">
+		<a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img alt="Valid CSS" src="ruaqtest_files/vcss.gif" style="border: medium none ;">
+		</a>
+	</td>
+	<td colspan="3" style="text-align: center;">
+		<a target="_blank" href="http://validator.w3.org/feed/check.cgi?url=http%3A//aci.selfip.org/blogs/aci/%3Ffeed%3Drss2">
+			<img style="border: medium none ; width: 88px; height: 31px;" src="ruaqtest_files/valid-rss.png" alt="Valid RSS">
+		</a>
+	</td>
+	<td colspan="3" style="text-align: center;">
+		<a target="_blank" href="http://www.unicode.org/">
+			<img src="ruaqtest_files/UniEnc.gif" alt="Unicode Encoded" style="border: medium none ;">
+		</a>
+	</td>
+	<td colspan="3" style="text-align: center;">
+		<a target="_blank" href="http://www.php.net/">
+			<img src="ruaqtest_files/php-power.png" alt="Powered by PHP" style="border: medium none ;">
+		</a>
+	</td>
+	<td colspan="3" style="text-align: center;">
+		<a target="_blank" href="http://httpd.apache.org/">
+			<img src="ruaqtest_files/powered_by_apache.gif" alt="Powered by Apache" style="border: medium none ;">
+		</a>
+	</td>
+	<td colspan="3" style="text-align: right;">
+		<a target="_blank" href="http://www.redhat.com/">
+			<img src="ruaqtest_files/powered_by_rh.gif" alt="Powered by Red Hat" style="border: medium none ; width: 88px; height: 31px;">
+		</a>
+	</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+</body></html>

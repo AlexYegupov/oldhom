@@ -1,0 +1,16 @@
+<html>
+  <title>Tinyurl code redirecter</title>
+<body>
+  <script>
+    function processForm() {
+      var code = document.forms['myform']['code'].value;
+      window.location = 'http://tinyurl.com/' + code;
+    }
+  </script>
+  <h1>Input tinyurl code:</h1> 8
+  <form action="http://ya.ru" name="myform" onSubmit="processForm(); return false">
+    <input type="text" name="code" autofocus/>
+    <input type="submit" />
+  </form>
+</body>
+</html>
